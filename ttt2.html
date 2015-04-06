@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html x-ng-app="tictactoeApp">
+<head>
+	<meta charset="utf-8">
+	<title>Tictactoe</title>
+	<link rel="stylesheet" href="ttt2.css">
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,700|Lobster' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+	<script src="ttt2.js"></script>
+	<!--  firebase -->
+	<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.18/firebase.js'></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
+</head>
+
+<header class="header">
+	<h1>Tic Tac Toe: Seeing <span style="color:#B65A6B">the Forest</span> for the Trees</h1>
+</header>
+
+<button ng-click="reset(c)">
+	REPLAY
+	</button>
+
+<body x-ng-controller="TicTacController" ng-model = "gameContainer">
+
+<div class="board">
+    <div x-ng-repeat="c in gameContainer.cellListArray">
+    <div class="allCells"  ng-click="clickedCell($index)" 
+    ng-class="{xClick: c.status =='X' , oClick: c.status =='O'}">
+        {{c.status}}
+
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

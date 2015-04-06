@@ -1,0 +1,96 @@
+.header {
+    font-family: Avantgarde, serif;
+    color: aliceblue;
+    float: center;
+}
+
+h1 {
+    position:relative;
+    display: block;
+    margin: 25px -8px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    color: aliceblue;
+    font-size: 45px;
+    padding: 80px 50px;
+    text-align: left;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    float: left;
+}
+
+
+/* AUDIO CONTROLS */
+.sqs-audio-embed {
+  visibility: hidden;
+}
+
+body {
+    background-image:url("http://fc08.deviantart.net/fs12/i/2006/274/7/4/Willow_Tree___Rainbow_by_mrl33t.jpg");
+    background-size: cover;
+}
+
+.board {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    float: center;
+    padding: 100px;
+}
+
+
+.allCells {
+    background-color: aliceblue;
+    border: transparent;
+    border-radius: 10%;
+    float: left;
+    width: 90px;
+    height: 90px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    opacity: .5;
+}
+
+button {
+margin-top: 100px;
+  padding: 15px 15px 15px 15px;
+  border: 10px solid #B65A6B;
+  color:aliceblue;
+  background-color: brown;
+  text-decoration:none;
+  text-align: center;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 14px;
+}
+
+.shadow {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+
+.xClick {
+    background-color: #278785;
+    font-family: Avantgarde;
+    text-align: center;
+    color: #B65A6B;
+    font-size: 80px;
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+    opacity: 0.8;
+}
+
+.oClick {
+    background-color: #982BFA;
+    font-family: Avantgarde;
+    text-align: center;
+    color: #2A3DB6;
+    font-size: 80px;
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+    opacity: 0.8;
+}
